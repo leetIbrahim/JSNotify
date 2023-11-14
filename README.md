@@ -46,3 +46,7 @@ Replace `[Your_Telegram_Bot_Token]` and `[Your_Telegram_Chat_ID]` with your actu
 **Below is an example of what the notification looks like:**
 
 ![Alt Text](https://i.imgur.com/o9IZJSG.png)
+
+
+
+Follow me on Twitter [@leetibrahim](https://twitter.com/leetibrahim) for updates.
