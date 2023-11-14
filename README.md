@@ -17,7 +17,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/leetIbrahim/JSNotify
+   git clone https://github.com/leetIbrahim/JSNotify.git
 2. **Install the required Python packages:**
    ```bash
    pip install -r requirements.txt
