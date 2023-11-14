@@ -1,0 +1,4 @@
+requests
+python-dotenv
+jsbeautifier
+python-telegram-bot
