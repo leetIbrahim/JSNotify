@@ -36,7 +36,7 @@ Replace `[Your_Telegram_Bot_Token]` and `[Your_Telegram_Chat_ID]` with your actu
 
 2. **Run the script** and follow the prompts:
    ```bash
-   python monitor_js.py
+   python3 monitor.py
 
 3. **Enter the path to your file containing the URLs when prompted.**
 
