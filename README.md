@@ -39,8 +39,11 @@ Replace `[Your_Telegram_Bot_Token]` and `[Your_Telegram_Chat_ID]` with your actu
    python3 monitor.py
 
 3. **Enter the path to your file containing the URLs when prompted.**
+   ```bash
+   https://example.com/main.js
+   https://example.com/app.js
 
-4. **The script will monitor these URLs and send notifications via Telegram if any changes are detected.**
+5. **The script will monitor these URLs and send notifications via Telegram if any changes are detected.**
 
 ## Example Notification
 **Below is an example of what the notification looks like:**
