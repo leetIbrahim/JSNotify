@@ -62,23 +62,29 @@ def generate_html_diff(old_file, new_file):
 
     in_block_comment = False
     significant_changes = False
-    filtered_diff = []  
+    filtered_diff = [] 
 
     for line in diff:
-        if '/*' in line and '*/' in line:
+        original_line = line[2:]  
+        line_type = line[0:2]   
+
+        if '/*' in original_line and '*/' in original_line:
             continue  
-        elif '/*' in line:
-            in_block_comment = True 
+        elif '/*' in original_line:
+            in_block_comment = True  
             continue
-        elif '*/' in line and in_block_comment:
+        elif '*/' in original_line and in_block_comment:
             in_block_comment = False  
             continue
         elif in_block_comment:
+            continue
+
+        if '//' in original_line and original_line.strip().startswith('//'):
             continue  
 
-        filtered_diff.append(line)
+        filtered_diff.append(line) 
 
-        if line.startswith('- ') or line.startswith('+ '):
+        if line_type in ('- ', '+ ') and not original_line.strip().startswith('//'):
             significant_changes = True
 
     if not significant_changes:
