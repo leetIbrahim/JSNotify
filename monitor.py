@@ -19,6 +19,9 @@ html_diff_directory = "html_diffs"
 os.makedirs(download_directory, exist_ok=True)
 os.makedirs(html_diff_directory, exist_ok=True)
 
+if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+    print("Error: Missing TELEGRAM_TOKEN or TELEGRAM_CHAT_ID in .env file.")
+    exit(1) 
 
 def get_urls_from_file(file_path):
     with open(file_path, 'r') as file:
